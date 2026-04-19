@@ -1,409 +1,827 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>The Town HTML CSS Template</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/templatemo-style.css" />
-    <!--
-	The Town
-	https://templatemo.com/tm-525-the-town
-	-->
-  </head>
-  <body>    
-    <!-- Hero section -->
-    <section id="hero" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
-          <div class="tm-next">
-              <a href="#hero" class="navbar-brand">The Town</a>
-          </div>             
-            
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#introduction">Introduction</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#work">Our Work</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
-              </li>                    
-            </ul>
-          </div>        
-        </div>
-      </nav>
-      
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">I'm John Jerome Luciano</h2>
-            <p class="tm-hero-subtitle">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              <br />
-            </p>
-        </div>        
-      </div>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>john jerome luciano — software engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 
-      <div class="tm-next tm-intro-next">
-        <a href="#introduction" class="text-center tm-down-arrow-link">
-          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
-        </a>
-      </div>      
-    </section>
+    :root {
+      --bg:     #0D0F14;
+      --text:   #E8E4DC;
+      --muted:  #6B7280;
+      --accent: #7BA7D4;
+      --border: rgba(232,228,220,0.08);
+      --grid:   rgba(123,167,212,0.07);
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --sans:   'DM Sans', sans-serif;
+    }
 
-    <section id="introduction" class="tm-section-pad-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="img/the-town-01.jpg" alt="Image" class="img-fluid tm-intro-img" />
-          </div>
-          <div class="col-lg-6">
-            <div class="tm-intro-text-container">
-                <h2 class="tm-text-primary mb-4 tm-section-title">Introduction</h2>
-                <p class="mb-4 tm-intro-text">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              </p>
-                <p class="mb-5 tm-intro-text">
-                  Please tell your friends about our site 
-                  <a rel="nofollow" href="https://templatemo.com">templatemo</a>. hen an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                <div class="tm-next">
-                  <a href="#work" class="tm-intro-text tm-btn-primary">Read More</a>
-                </div>
-            </div>
-          </div>
-        </div>
+    html { scroll-behavior: smooth; }
 
-        <div class="row tm-section-pad-top">
-          <div class="col-lg-4">
-            <i class="fas fa-4x fa-bus text-center tm-icon"></i>
-            <h4 class="text-center tm-text-primary mb-4">Curabitur at elit eu risus</h4>
-            <p>
-              Sed ultrices sit amet mi eu malesuada. Cras ultricies gravida
-              nisi, ac pellentesque nunc tincidunt quis. Aenean at ornare lacus.
-              Duis imperdiet lacus justo.
-            </p>
-          </div>
-        
-        <div class="col-lg-4 mt-5 mt-lg-0">
-          <i class="fas fa-4x fa-bicycle text-center tm-icon"></i>
-          <h4 class="text-center tm-text-primary mb-4">Nunc sed metus vel nisi</h4>
-          <p>
-            Praesent ut finibus leo. Duis et tempus ipsum, id pretium nunc.
-            Vivamus imperdiet sem quis orci pharetra convallis. Nunc a tempus
-            nisi, sed fringilla purus. In hac habitasse platea.
-          </p>
-        </div>
-        <div class="col-lg-4 mt-5 mt-lg-0">
-          <i class="fas fa-4x fa-city text-center tm-icon"></i>
-          <h4 class="text-center tm-text-primary mb-4">Fusce sed nisi sagittis</h4>
-          <p>
-            Donec vestibulum libero nisl. Curabitur ac orci ac lorem blandit
-            volutpat. Sed ac sodales nibh, ut porttitor elit. Sed id dui mi.
-            Vestibulum ante ipsum primis in faucibus.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="work" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Our Work</h2>
-              <p class="mx-auto tm-work-description">
-                "Curabitur ac orci ac lorem blandit volutpat. Sed ac sodales nibh, ut
-                porttitor elit. Sed id dui mi. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia."
-              </p>
-          </div>            
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
-                    <div class="grid tm-gallery">
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Dreamy <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Second <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-03.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-03.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Third <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-04.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-04.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Dreamy <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-05.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-05.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Fifth <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-06.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-06.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Sixth <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Dreamy <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Eighth <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                </div>                
-            </div>        
-          </div>
-      </div>
-    </section>
+    body {
+      background-color: var(--bg);
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 48px 48px;
+      color: var(--text);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
 
-    <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-      <div class="container tm-container-contact">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="mb-4 tm-section-title">Contact Us</h2>
-                <div class="mb-5 tm-underline">
-                  <div class="tm-underline-inner"></div>
-                </div>
-                <p class="mb-5">
-                  Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt dui,
-                  non tempus sem turpis vitae lorem. Maecenas eget odio in sapien ultrices
-                  viverra vitae vel leo. Curabitur at elit eu risus pharetra pellentesque
-                  at at velit.
-                </p>
-            </div>
-            
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="tel:0100200340" class="tm-contact-item-link">
-                  <i class="fas fa-3x fa-phone mr-4"></i>
-                  <span class="mb-0">010-020-0340</span>
-              </a>              
-            </div>
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="mailto:info@company.co" class="tm-contact-item-link">
-                  <i class="fas fa-3x fa-envelope mr-4"></i>
-                  <span class="mb-0">info@company.co</span>
-              </a>              
-            </div>
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="https://www.google.com/maps" class="tm-contact-item-link">
-                  <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
-                  <span class="mb-0">Location on Maps</span>
-              </a>              
-            </div>
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <form action="" method="get">
-                <input name="email" type="email" placeholder="Subscribe your email" class="tm-input" required />
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
-            </div>
-        </div>
-      </div>
-      <footer class="text-center small tm-footer">
-          <p class="mb-0">
-            Copyright &copy; 2019 Company Name 
-            
-            - Design: <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
-          </p>
-        </footer>
-    </section>
-    <script src="js/jquery-1.9.1.min.js"></script>     
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script>
+    /* ── BACKGROUND CANVAS ───────────────────────────── */
+    #bgCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
 
-      function getOffSet(){
-        var _offset = 450;
-        var windowHeight = window.innerHeight;
+    /* ── ALL CONTENT ABOVE CANVAS ────────────────────── */
+    #hero, .marquee-wrap, .section, footer {
+      position: relative;
+      z-index: 1;
+    }
 
-        if(windowHeight > 500) {
-          _offset = 400;
-        } 
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
+    /* ── HERO ────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 5rem 5.5rem;
+      overflow: hidden;
+    }
 
-        return _offset;
+    .hero-orb {
+      position: absolute; inset: 0;
+      width: 640px; height: 640px;
+      background: radial-gradient(circle at center,
+        rgba(123,167,212,0.12) 0%,
+        rgba(123,167,212,0.04) 50%,
+        transparent 70%);
+      border-radius: 50%;
+      top: -4%; right: -5%;
+      pointer-events: none;
+      animation: orbFloat 12s ease-in-out infinite;
+      z-index: 0;
+    }
+    .hero-ring {
+      position: absolute;
+      width: 240px; height: 240px;
+      border: 1px solid rgba(123,167,212,0.18);
+      border-radius: 50%;
+      top: 14%; right: 10%;
+      pointer-events: none;
+      animation: ringRotate 32s linear infinite;
+      z-index: 0;
+    }
+    .hero-ring::after {
+      content: '';
+      position: absolute;
+      width: 5px; height: 5px;
+      background: var(--accent); border-radius: 50%;
+      top: -2.5px; left: 50%; transform: translateX(-50%);
+      opacity: 0.7;
+      box-shadow: 0 0 10px rgba(123,167,212,0.7);
+    }
+    .hero-content { position: relative; z-index: 1; }
+
+    .hero-overline {
+      font-size: 0.72rem; letter-spacing: 0.18em;
+      color: var(--muted); margin-bottom: 1.6rem;
+      opacity: 0; animation: fadeUp 0.7s ease forwards 0.3s;
+    }
+    .hero-name {
+      font-family: var(--serif);
+      font-size: clamp(3.8rem, 9.5vw, 8.5rem);
+      font-weight: 300; line-height: 0.95; letter-spacing: -0.025em;
+      margin-bottom: 3rem;
+      opacity: 0; animation: fadeUp 0.85s ease forwards 0.5s;
+    }
+    .hero-name em { font-style: italic; color: var(--accent); }
+    .hero-rule {
+      height: 1px; background: var(--border); margin-bottom: 2rem;
+      opacity: 0; animation: fadeIn 0.6s ease forwards 0.85s;
+    }
+    .hero-footer {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      opacity: 0; animation: fadeUp 0.7s ease forwards 1s;
+    }
+    .hero-bio {
+      max-width: 400px; font-size: 0.93rem; color: var(--muted); line-height: 1.8;
+    }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      text-decoration: none; color: var(--muted);
+      font-size: 0.74rem; letter-spacing: 0.1em; transition: color 0.25s;
+    }
+    .hero-cta:hover { color: var(--text); }
+    .hero-cta .arrow {
+      display: inline-block; width: 36px; height: 1px;
+      background: currentColor; position: relative; transition: width 0.3s;
+    }
+    .hero-cta:hover .arrow { width: 52px; }
+    .hero-cta .arrow::after {
+      content: ''; position: absolute; right: -1px; top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      width: 5px; height: 5px;
+      border-right: 1px solid currentColor; border-top: 1px solid currentColor;
+    }
+
+    /* ── MARQUEE ─────────────────────────────────────── */
+    .marquee-wrap {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 0.85rem 0; overflow: hidden;
+      background: rgba(13,15,20,0.75);
+      backdrop-filter: blur(2px);
+    }
+    .marquee-track {
+      display: flex; white-space: nowrap;
+      animation: marquee 30s linear infinite; width: max-content;
+    }
+    .marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+    .m-item {
+      font-size: 0.7rem; letter-spacing: 0.12em;
+      color: var(--muted); padding: 0 1.5rem;
+      border-right: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+    .m-item:hover { color: var(--accent); }
+    .m-item.hi { color: rgba(61,90,128,0.7); }
+
+    /* ── SECTIONS ────────────────────────────────────── */
+    .section {
+      padding: 7.5rem 5rem;
+      border-top: 1px solid var(--border);
+    }
+    .section-label {
+      display: flex; align-items: center; gap: 1rem;
+      font-size: 0.7rem; letter-spacing: 0.16em;
+      color: var(--muted); margin-bottom: 4.5rem;
+    }
+    .section-label span { width: 28px; height: 1px; background: var(--border); display: block; }
+
+    /* ── ABOUT ───────────────────────────────────────── */
+    .about-grid {
+      display: grid; grid-template-columns: 5fr 7fr; gap: 5rem; align-items: start;
+    }
+    .about-heading {
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 3.8vw, 3rem);
+      font-weight: 400; line-height: 1.18;
+      position: sticky; top: 4rem;
+    }
+    .about-heading em { font-style: italic; color: var(--accent); }
+    .about-body p {
+      font-size: 0.96rem; color: var(--muted); line-height: 1.85; margin-bottom: 1.3rem;
+    }
+    .about-body p:last-child { margin-bottom: 0; }
+
+    /* ── SKILLS ──────────────────────────────────────── */
+    .skill-rows { width: 100%; }
+    .skill-row {
+      display: grid; grid-template-columns: 3.2rem 1fr 1.6fr;
+      gap: 2.5rem; align-items: center;
+      padding: 2rem 0; border-top: 1px solid var(--border);
+      position: relative; cursor: default;
+      transition: padding-left 0.4s cubic-bezier(0.16,1,0.3,1);
+    }
+    .skill-row:last-child { border-bottom: 1px solid var(--border); }
+    .skill-row::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+      width: 2px; background: var(--accent);
+      transform: scaleY(0); transform-origin: top;
+      transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    .skill-row:hover { padding-left: 1.6rem; }
+    .skill-row:hover::before { transform: scaleY(1); }
+    .sr-num {
+      font-family: var(--serif);
+      font-size: 1.5rem; font-weight: 300;
+      color: rgba(26,24,20,0.13);
+      line-height: 1; letter-spacing: -0.02em;
+      transition: color 0.3s, font-style 0.3s; user-select: none;
+    }
+    .skill-row:hover .sr-num { color: var(--accent); font-style: italic; }
+    .sr-name {
+      font-family: var(--serif);
+      font-size: 1.35rem; font-weight: 400;
+      line-height: 1.1; margin-bottom: 0.3rem; transition: letter-spacing 0.3s;
+    }
+    .skill-row:hover .sr-name { letter-spacing: 0.01em; }
+    .sr-desc { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.06em; }
+    .sr-tags { display: flex; flex-wrap: wrap; align-items: center; row-gap: 0.5rem; }
+    .st { font-size: 0.8rem; color: var(--muted); transition: color 0.25s; white-space: nowrap; }
+    .st::after {
+      content: ''; display: inline-block;
+      width: 3px; height: 3px; background: var(--border);
+      border-radius: 50%; margin: 0 0.55rem; vertical-align: middle; transition: background 0.25s;
+    }
+    .st:last-child::after { display: none; }
+    .st.key { color: var(--text); font-weight: 500; }
+    .skill-row:hover .st { color: var(--text); }
+    .skill-row:hover .st.key { color: var(--accent); }
+    .skill-row:hover .st::after { background: rgba(61,90,128,0.28); }
+
+    /* ── CONTACT ─────────────────────────────────────── */
+    #contact { text-align: center; }
+    .contact-heading {
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 7vw, 6rem);
+      font-weight: 300; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem;
+    }
+    .contact-heading em { font-style: italic; color: var(--accent); }
+    .contact-sub { font-size: 0.9rem; color: var(--muted); max-width: 380px; margin: 0 auto 3.5rem; }
+    .contact-links { list-style: none; display: flex; justify-content: center; gap: 0; flex-wrap: wrap; }
+    .contact-links li a {
+      display: block; text-decoration: none; color: var(--muted);
+      font-size: 0.74rem; letter-spacing: 0.1em;
+      padding: 0.75rem 2.2rem; border: 1px solid var(--border);
+      margin: -0.5px; transition: color 0.2s, background 0.2s, border-color 0.2s;
+    }
+    .contact-links li a:hover { color: var(--bg); background: var(--text); border-color: var(--text); }
+
+    /* ── FOOTER ──────────────────────────────────────── */
+    footer {
+      padding: 1.8rem 5rem; border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.72rem; color: var(--muted); letter-spacing: 0.04em;
+      background: rgba(13,15,20,0.80); backdrop-filter: blur(2px);
+    }
+
+    /* ── REVEAL ──────────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.75s ease, transform 0.75s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+
+    /* ── KEYFRAMES ───────────────────────────────────── */
+    @keyframes fadeUp { from { opacity:0; transform:translateY(26px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes orbFloat { 0%,100% { transform:translateY(0) scale(1); } 50% { transform:translateY(-28px) scale(1.04); } }
+    @keyframes ringRotate { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+    @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+
+    /* ── RESPONSIVE ──────────────────────────────────── */
+    @media (max-width: 900px) {
+      #hero, .section, footer { padding-left: 2rem; padding-right: 2rem; }
+      #hero { padding-bottom: 4rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-heading { position: static; }
+      .hero-footer { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+      .contact-links { flex-direction: column; align-items: center; }
+      .hero-orb { width: 380px; height: 380px; }
+      .hero-ring { display: none; }
+    }
+    @media (max-width: 640px) {
+      .skill-row { grid-template-columns: 2.5rem 1fr; }
+      .sr-tags { grid-column: 2; margin-top: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── BACKGROUND CANVAS ── -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-orb"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-content">
+    <p class="hero-overline">software engineer &nbsp;·&nbsp; philippines</p>
+    <h1 class="hero-name">John Jerome<br><em>Luciano</em></h1>
+    <div class="hero-rule"></div>
+    <div class="hero-footer">
+      <p class="hero-bio">full-stack developer and ai practitioner — building intelligent systems and seamless experiences across web, mobile, and machine learning.</p>
+      <a class="hero-cta" href="#about">learn more <span class="arrow"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ── MARQUEE ── -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="m-item hi">python</span><span class="m-item">typescript</span><span class="m-item">javascript</span><span class="m-item hi">reactjs</span><span class="m-item">tailwindcss</span><span class="m-item hi">llm integration</span><span class="m-item">postgresql</span><span class="m-item hi">yolo fine-tuning</span><span class="m-item">databricks</span><span class="m-item">react native</span><span class="m-item hi">whisper / stt</span><span class="m-item">image recognition</span><span class="m-item">automation</span><span class="m-item">mysql</span><span class="m-item">android</span><span class="m-item hi">python</span><span class="m-item">typescript</span><span class="m-item">javascript</span><span class="m-item hi">reactjs</span><span class="m-item">tailwindcss</span><span class="m-item hi">llm integration</span><span class="m-item">postgresql</span><span class="m-item hi">yolo fine-tuning</span><span class="m-item">databricks</span><span class="m-item">react native</span><span class="m-item hi">whisper / stt</span><span class="m-item">image recognition</span><span class="m-item">automation</span><span class="m-item">mysql</span><span class="m-item">android</span>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="section">
+  <p class="section-label"><span></span> about</p>
+  <div class="about-grid">
+    <div class="reveal">
+      <h2 class="about-heading">software that<br><em>thinks</em> and<br>endures.</h2>
+    </div>
+    <div class="about-body reveal" style="transition-delay:0.1s">
+      <p>i'm a software engineer with over two years of experience building full-stack applications, data pipelines, and ai-powered systems. my foundation in python and the javascript ecosystem lets me move fluidly between backend logic, frontend interfaces, and machine learning workflows.</p>
+      <p>i specialize in integrating large language models, fine-tuning computer vision models with yolo ultralytics, and building speech-to-text pipelines using whisper and openai apis. i'm comfortable working with data at scale — from postgresql and mysql schemas to databricks for distributed processing.</p>
+      <p>on the frontend i build with reactjs, tailwindcss, and react native, and i have experience shipping to android as well. i care about clean architecture, developer experience, and solutions that are as maintainable as they are functional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERTISE ── -->
+<section id="skills" class="section">
+  <p class="section-label"><span></span> expertise</p>
+  <div class="skill-rows">
+    <div class="skill-row reveal">
+      <span class="sr-num">01</span>
+      <div><h3 class="sr-name">Languages</h3><p class="sr-desc">core stack</p></div>
+      <div class="sr-tags"><span class="st key">Python</span><span class="st key">TypeScript</span><span class="st">JavaScript</span></div>
+    </div>
+    <div class="skill-row reveal" style="transition-delay:0.06s">
+      <span class="sr-num">02</span>
+      <div><h3 class="sr-name">Frontend</h3><p class="sr-desc">web &amp; mobile</p></div>
+      <div class="sr-tags"><span class="st key">ReactJS</span><span class="st key">TailwindCSS</span><span class="st">React Native</span><span class="st">Android</span></div>
+    </div>
+    <div class="skill-row reveal" style="transition-delay:0.12s">
+      <span class="sr-num">03</span>
+      <div><h3 class="sr-name">Data &amp; Backend</h3><p class="sr-desc">storage &amp; pipelines</p></div>
+      <div class="sr-tags"><span class="st key">PostgreSQL</span><span class="st">MySQL</span><span class="st key">Databricks</span><span class="st">Relational DBs</span><span class="st">Automation</span></div>
+    </div>
+    <div class="skill-row reveal" style="transition-delay:0.18s">
+      <span class="sr-num">04</span>
+      <div><h3 class="sr-name">AI &amp; ML</h3><p class="sr-desc">intelligence layer</p></div>
+      <div class="sr-tags"><span class="st key">LLM Integration</span><span class="st key">YOLO Fine-tuning</span><span class="st">Whisper / STT</span><span class="st">Image Recognition</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" class="section">
+  <p class="section-label" style="justify-content:center"><span></span> contact <span></span></p>
+  <h2 class="contact-heading reveal">let's build<br>something <em>great.</em></h2>
+  <p class="contact-sub reveal" style="transition-delay:0.1s">open to new opportunities, collaborations, and interesting engineering challenges.</p>
+  <ul class="contact-links reveal" style="transition-delay:0.18s">
+    <li><a href="mailto:john@example.com">email</a></li>
+    <li><a href="https://github.com/" target="_blank" rel="noopener">github</a></li>
+    <li><a href="https://linkedin.com/in/" target="_blank" rel="noopener">linkedin</a></li>
+    <li><a href="#" target="_blank" rel="noopener">résumé</a></li>
+  </ul>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <span>© 2025 john jerome luciano</span>
+  <span>software engineer &nbsp;·&nbsp; philippines</span>
+</footer>
+
+<!-- ── SCRIPTS ── -->
+<script>
+/* ── scroll reveal ── */
+const revObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revObs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(r => revObs.observe(r));
+</script>
+
+<script>
+/* ═══════════════════════════════════════════════════════
+   ANIMATED BACKGROUND — all layers, boosted opacity
+   ═══════════════════════════════════════════════════════ */
+(function () {
+  const canvas = document.getElementById('bgCanvas');
+  const ctx    = canvas.getContext('2d');
+  let W, H, t = 0;
+  const A    = 'rgba(123,167,212,';
+  const FONT = "300 11px 'DM Sans', sans-serif";
+
+  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  window.addEventListener('resize', resize); resize();
+
+  /* ─────────────────────────────────────────────────────
+     1. FOURIER EPICYCLE CLUSTERS  (opacity boosted ~2x)
+  ───────────────────────────────────────────────────── */
+  const clusters = [
+    { x:0.78, y:0.22, n:5,  r:62, speed:0.008, phase:0   },
+    { x:0.12, y:0.55, n:3,  r:42, speed:0.012, phase:1.2 },
+    { x:0.88, y:0.70, n:7,  r:52, speed:0.007, phase:0.4 },
+    { x:0.35, y:0.88, n:4,  r:36, speed:0.010, phase:2.1 },
+    { x:0.60, y:0.12, n:9,  r:46, speed:0.006, phase:3.3 },
+  ];
+  clusters.forEach(c => { c.wave = []; c.maxWave = 130; });
+
+  function harmonics(n) {
+    return Array.from({length:n}, (_,k) => ({ freq:2*k+1, amp:(4/Math.PI)/(2*k+1) }));
+  }
+
+  function drawCluster(c) {
+    const cx = c.x*W, cy = c.y*H;
+    const hs = harmonics(c.n);
+    const totalAmp = hs.reduce((s,h) => s+h.amp, 0);
+    const scale = c.r / totalAmp;
+    const lt = t * c.speed + c.phase;
+    let ex = cx, ey = cy;
+
+    for (let i = 0; i < hs.length; i++) {
+      const {freq, amp} = hs[i];
+      const r = amp * scale;
+      const px = ex, py = ey;
+      ex += r * Math.cos(freq * lt);
+      ey += r * Math.sin(freq * lt);
+      const fade = 1 - i / hs.length;
+
+      ctx.beginPath(); ctx.arc(px, py, r, 0, Math.PI*2);
+      ctx.strokeStyle = `${A}${(0.10 + 0.15*fade).toFixed(2)})`;
+      ctx.lineWidth = 0.8; ctx.stroke();
+
+      ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(ex, ey);
+      ctx.strokeStyle = `${A}${(0.22 + 0.40*fade).toFixed(2)})`;
+      ctx.lineWidth = i===0 ? 1.2 : 0.85; ctx.stroke();
+    }
+
+    ctx.beginPath(); ctx.arc(ex, ey, 2.5, 0, Math.PI*2);
+    ctx.fillStyle = `${A}0.55)`; ctx.fill();
+
+    c.wave.unshift(ey - cy);
+    if (c.wave.length > c.maxWave) c.wave.length = c.maxWave;
+
+    if (c.wave.length > 1) {
+      const grd = ctx.createLinearGradient(cx+c.r+4, 0, cx+c.r+4+c.wave.length, 0);
+      grd.addColorStop(0,   `${A}0.38)`);
+      grd.addColorStop(0.5, `${A}0.22)`);
+      grd.addColorStop(1,   `${A}0)`);
+      ctx.beginPath();
+      for (let i = 0; i < c.wave.length; i++) {
+        const wx = cx+c.r+4+i, wy = cy+c.wave[i];
+        i===0 ? ctx.moveTo(wx,wy) : ctx.lineTo(wx,wy);
       }
+      ctx.strokeStyle = grd; ctx.lineWidth = 1.2; ctx.stroke();
+    }
 
-      function setParallaxPosition($doc, multiplier, $object){
-        var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
-          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
+    ctx.beginPath(); ctx.moveTo(ex, ey); ctx.lineTo(cx+c.r+4, cy+(c.wave[0]||0));
+    ctx.strokeStyle = `${A}0.14)`; ctx.setLineDash([2,5]); ctx.lineWidth=0.6; ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  /* ─────────────────────────────────────────────────────
+     2. DRIFTING RULERS
+  ───────────────────────────────────────────────────── */
+  const rulers = [
+    { axis:'h', y:0.32, offset:0,   speed:0.15,  len:0.45, startX:0.52 },
+    { axis:'v', x:0.05, offset:120, speed:-0.12, len:0.30, startY:0.18 },
+    { axis:'h', y:0.77, offset:60,  speed:0.08,  len:0.28, startX:0.68 },
+    { axis:'v', x:0.95, offset:0,   speed:0.10,  len:0.35, startY:0.42 },
+  ];
+
+  function drawRuler(r) {
+    const op = 0.22;
+    ctx.strokeStyle = `${A}${op})`; ctx.fillStyle = `${A}${op*0.85})`;
+    ctx.font = FONT; ctx.lineWidth = 0.9;
+
+    if (r.axis === 'h') {
+      const y  = r.y * H;
+      const sx = r.startX*W + (r.offset + t*r.speed) % W;
+      const ex = sx + r.len*W;
+      ctx.beginPath(); ctx.moveTo(sx,y); ctx.lineTo(ex,y); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(sx,y-6); ctx.lineTo(sx,y+6); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(ex,y-6); ctx.lineTo(ex,y+6); ctx.stroke();
+      const step = 48;
+      for (let x = sx; x <= ex; x += step) {
+        const major = Math.round((x-sx)/step)%4===0;
+        const th = major ? 8 : 4;
+        ctx.beginPath(); ctx.moveTo(x,y-th); ctx.lineTo(x,y+th); ctx.stroke();
+        if (major) ctx.fillText(Math.round((x-sx)/step)*step, x+2, y-12);
       }
+      ctx.fillText(`${Math.round(r.len*W)}px`, (sx+ex)/2-16, y-16);
+    } else {
+      const x  = r.x*W;
+      const sy = r.startY*H + (r.offset + t*r.speed) % H;
+      const ey2 = sy + r.len*H;
+      ctx.beginPath(); ctx.moveTo(x,sy); ctx.lineTo(x,ey2); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(x-6,sy); ctx.lineTo(x+6,sy); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(x-6,ey2); ctx.lineTo(x+6,ey2); ctx.stroke();
+      const step = 48;
+      for (let y = sy; y <= ey2; y += step) {
+        const major = Math.round((y-sy)/step)%4===0;
+        const tw = major ? 8 : 4;
+        ctx.beginPath(); ctx.moveTo(x-tw,y); ctx.lineTo(x+tw,y); ctx.stroke();
+        if (major) ctx.fillText(Math.round((y-sy)/step)*step, x+10, y+4);
+      }
+    }
+  }
 
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
+  /* ─────────────────────────────────────────────────────
+     3. FLOATING MATH ANNOTATIONS
+  ───────────────────────────────────────────────────── */
+  const EQUATIONS = [
+    'f(x) = Σ aₙsin(nx)', '∇²φ = 0', 'e^(iπ) + 1 = 0',
+    '∫₀^∞ e^(-x²)dx = √π/2', 'FFT(x[n])', 'σ(x) = 1/(1+e⁻ˣ)',
+    '||w||² → min', 'Δv = v·ln(m₀/mf)', 'T² ∝ a³',
+    'F = GMm/r²', 'loss = -Σ y·log(ŷ)', 'curl F = ∇×F',
+    'v² = GM(2/r − 1/a)', 'ε = 1−(rₚ/a)', 'ΔE = ½mΔv²',
+  ];
 
-        if(forceSet) {
-          setParallaxPosition($doc, multiplier, $object);
-        } else {
-          $(window).scroll(function(){          
-            setParallaxPosition($doc, multiplier, $object);
-          });
-        }
-      };
+  const floaters = Array.from({length:11}, (_,i) => ({
+    text: EQUATIONS[i % EQUATIONS.length],
+    x: Math.random(), y: Math.random(),
+    vx: (Math.random()-0.5)*0.04, vy: (Math.random()-0.5)*0.025,
+    life: Math.random()*Math.PI*2, lifeSpd: 0.004+Math.random()*0.003,
+  }));
 
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        $(window).scroll(function(){
-          var firstTop = $object.offset().top,
-              pos = $(window).scrollTop(),
-              yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+  function drawFloaters() {
+    ctx.font = "300 10.5px 'DM Sans', sans-serif";
+    floaters.forEach(f => {
+      f.life += f.lifeSpd; f.x += f.vx/W*10; f.y += f.vy/H*10;
+      if (f.x < -0.05) f.x = 1.05; if (f.x > 1.05) f.x = -0.05;
+      if (f.y < -0.05) f.y = 1.05; if (f.y > 1.05) f.y = -0.05;
+      const alpha = (Math.sin(f.life)*0.5+0.5) * 0.22;
+      ctx.fillStyle = `${A}${alpha.toFixed(3)})`;
+      ctx.fillText(f.text, f.x*W, f.y*H);
+    });
+  }
 
-          var bg_css = 'center ' + yPos + 'px';
+  /* ─────────────────────────────────────────────────────
+     4. LISSAJOUS CURVES
+  ───────────────────────────────────────────────────── */
+  const lissajous = [
+    { cx:0.22, cy:0.15, rx:55, ry:38, a:3, b:2, delta:Math.PI/4, rot:0, rotSpd:0.0003 },
+    { cx:0.80, cy:0.85, rx:45, ry:45, a:1, b:1, delta:0,          rot:0, rotSpd:-0.0002 },
+    { cx:0.50, cy:0.50, rx:60, ry:35, a:5, b:4, delta:Math.PI/6,  rot:0, rotSpd:0.00025 },
+  ];
 
-          $object.css({"background-position" : bg_css });
-        });
-      };
-      
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);   
-        
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
+  function drawLissajous(l) {
+    l.rot += l.rotSpd;
+    const cx = l.cx*W, cy = l.cy*H;
+    ctx.save(); ctx.translate(cx,cy); ctx.rotate(l.rot);
+    const grd = ctx.createLinearGradient(-l.rx,0,l.rx,0);
+    grd.addColorStop(0, `${A}0)`); grd.addColorStop(0.3, `${A}0.18)`);
+    grd.addColorStop(0.7, `${A}0.18)`); grd.addColorStop(1, `${A}0)`);
+    ctx.beginPath();
+    for (let i = 0; i <= 220; i++) {
+      const theta = (i/220)*Math.PI*2;
+      const x = l.rx*Math.sin(l.a*theta+l.delta), y = l.ry*Math.sin(l.b*theta);
+      i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+    }
+    ctx.strokeStyle = grd; ctx.lineWidth = 1.0; ctx.stroke();
+    ctx.restore();
+  }
 
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
-        });
-        
-        // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show'); 
-        })
+  /* ─────────────────────────────────────────────────────
+     5. DIMENSION LINES
+  ───────────────────────────────────────────────────── */
+  const dimLines = [
+    { ax:0.15, ay:0.08, bx:0.38, by:0.08, label:'△x', phase:0   },
+    { ax:0.62, ay:0.92, bx:0.85, by:0.92, label:'△y', phase:1.5 },
+    { ax:0.92, ay:0.15, bx:0.92, by:0.40, label:'r',  phase:3.0 },
+  ];
 
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav();        
-        
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
+  function drawDimLine(d) {
+    const alpha = (Math.sin(t*0.009+d.phase)*0.5+0.5) * 0.22;
+    const prog  = (Math.sin(t*0.006+d.phase)*0.5+0.5);
+    const ax=d.ax*W, ay=d.ay*H, bx=d.bx*W, by=d.by*H;
+    const mx = ax+(bx-ax)*prog, my = ay+(by-ay)*prog;
+    ctx.strokeStyle=`${A}${alpha})`; ctx.fillStyle=`${A}${alpha})`; ctx.lineWidth=0.9; ctx.font=FONT;
+    ctx.beginPath(); ctx.moveTo(ax,ay); ctx.lineTo(mx,my); ctx.stroke();
+    const angle=Math.atan2(my-ay,mx-ax), hs=6;
+    ctx.beginPath(); ctx.moveTo(mx,my);
+    ctx.lineTo(mx-hs*Math.cos(angle-0.4), my-hs*Math.sin(angle-0.4));
+    ctx.lineTo(mx-hs*Math.cos(angle+0.4), my-hs*Math.sin(angle+0.4));
+    ctx.closePath(); ctx.fill();
+    ctx.fillText(d.label, (ax+mx)/2+4, (ay+my)/2-6);
+  }
 
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 400, function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
+  /* ─────────────────────────────────────────────────────
+     6. LUNAR LANDING — optimized descent trajectory
+        Top-left corner, ghost blueprint style
+  ───────────────────────────────────────────────────── */
+  const lunar = {
+    bx: 0.03, by: 0.52,   // region bottom-left (normalised)
+    bw: 0.28, bh: 0.38,   // region size
+  };
 
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: { enabled: true }
-        });
+  // Pre-computed Bezier waypoints for optimal descent (power-descent + terminal):
+  // Start: high-altitude approach, End: touchdown
+  // Spacecraft loops through the trajectory on a period
+  function drawLunar() {
+    const ox = lunar.bx*W, oy = lunar.by*H;
+    const rw = lunar.bw*W, rh = lunar.bh*H;
+    const base = oy + rh; // surface y
 
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-        });
-      });
-    </script>
-  </body>
+    // ── moon surface (jagged horizon) ──
+    ctx.beginPath(); ctx.moveTo(ox, base);
+    const craters = [0, 0.12, 0.25, 0.35, 0.48, 0.60, 0.72, 0.85, 1.0];
+    const elev    = [0, -4, -2, -8,   2,   -3,   5,   -2,   0];
+    craters.forEach((cx2, i) => ctx.lineTo(ox + cx2*rw, base + elev[i]));
+    ctx.strokeStyle = `${A}0.28)`; ctx.lineWidth = 1.2; ctx.stroke();
+
+    // landing pad
+    const padX = ox + 0.55*rw;
+    ctx.beginPath(); ctx.moveTo(padX-14, base); ctx.lineTo(padX+14, base);
+    ctx.strokeStyle = `${A}0.40)`; ctx.lineWidth = 2; ctx.stroke();
+    ctx.fillStyle = `${A}0.25)`;
+    ctx.font = "300 9px 'DM Sans',sans-serif";
+    ctx.fillText('PAD', padX-8, base+12);
+
+    // ── optimal trajectory curve (Bezier) ──
+    // p0=start, cp1,cp2=control, p3=landing pad
+    const p0  = { x: ox + 0.08*rw,  y: oy + 0.04*rh };
+    const cp1 = { x: ox + 0.20*rw,  y: oy + 0.10*rh };
+    const cp2 = { x: ox + 0.40*rw,  y: oy + 0.55*rh };
+    const p3  = { x: padX,           y: base - 2     };
+
+    // ghost path
+    ctx.beginPath();
+    ctx.moveTo(p0.x, p0.y);
+    ctx.bezierCurveTo(cp1.x, cp1.y, cp2.x, cp2.y, p3.x, p3.y);
+    ctx.setLineDash([3,5]);
+    ctx.strokeStyle = `${A}0.20)`; ctx.lineWidth = 1; ctx.stroke();
+    ctx.setLineDash([]);
+
+    // ── altitude grid lines ──
+    ctx.font = FONT;
+    for (let i = 1; i <= 3; i++) {
+      const gy = oy + (i/3.5)*rh;
+      ctx.beginPath(); ctx.moveTo(ox, gy); ctx.lineTo(ox+rw, gy);
+      ctx.setLineDash([2,6]);
+      ctx.strokeStyle = `${A}0.10)`; ctx.lineWidth = 0.6; ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = `${A}0.18)`;
+      ctx.fillText(`h${4-i}`, ox-2, gy-3);
+    }
+
+    // ── animated spacecraft along trajectory ──
+    const period = 420; // frames per loop
+    const prog   = (t % period) / period;
+    const B = (p, q, r, s, u) => {
+      const u2=u*u, u3=u2*u, v=1-u, v2=v*v, v3=v2*v;
+      return { x: v3*p.x + 3*v2*u*q.x + 3*v*u2*r.x + u3*s.x,
+               y: v3*p.y + 3*v2*u*q.y + 3*v*u2*r.y + u3*s.y };
+    };
+    const pos  = B(p0, cp1, cp2, p3, prog);
+    const posD = B(p0, cp1, cp2, p3, Math.min(prog+0.01,1));
+    const ang  = Math.atan2(posD.y-pos.y, posD.x-pos.x) + Math.PI/2;
+
+    // thrust flame (wider near surface)
+    const thrustLen = 8 + (1-prog)*10;
+    ctx.save(); ctx.translate(pos.x, pos.y); ctx.rotate(ang);
+    const flamegrd = ctx.createLinearGradient(0, 0, 0, thrustLen+4);
+    flamegrd.addColorStop(0, `${A}0.45)`);
+    flamegrd.addColorStop(1, `${A}0)`);
+    ctx.beginPath(); ctx.moveTo(-3, 0); ctx.lineTo(3, 0); ctx.lineTo(1.5, thrustLen); ctx.lineTo(-1.5, thrustLen); ctx.closePath();
+    ctx.fillStyle = flamegrd; ctx.fill();
+
+    // lander body (triangle)
+    ctx.beginPath();
+    ctx.moveTo(0, -7); ctx.lineTo(-5, 4); ctx.lineTo(5, 4); ctx.closePath();
+    ctx.strokeStyle = `${A}0.55)`; ctx.lineWidth = 1; ctx.stroke();
+
+    // landing legs
+    ctx.beginPath(); ctx.moveTo(-5, 4); ctx.lineTo(-8, 8); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(5, 4);  ctx.lineTo(8, 8);  ctx.stroke();
+    ctx.restore();
+
+    // velocity vector arrow
+    const vscale = (1-prog) * 22;
+    ctx.beginPath(); ctx.moveTo(pos.x, pos.y);
+    ctx.lineTo(pos.x + Math.cos(ang-Math.PI/2)*vscale, pos.y + Math.sin(ang-Math.PI/2)*vscale);
+    ctx.strokeStyle = `${A}0.30)`; ctx.lineWidth = 0.8; ctx.stroke();
+
+    // altitude label
+    const altFrac = 1 - prog;
+    ctx.fillStyle = `${A}0.28)`;
+    ctx.font = "300 9.5px 'DM Sans',sans-serif";
+    ctx.fillText(`alt ${Math.round(altFrac*100)}%`, pos.x+10, pos.y-4);
+
+    // section label
+    ctx.font = "300 9px 'DM Sans',sans-serif";
+    ctx.fillStyle = `${A}0.22)`;
+    ctx.fillText('lunar descent · power-descent phase', ox, oy - 8);
+  }
+
+  /* ─────────────────────────────────────────────────────
+     7. ORBITAL MECHANICS — Kepler orbits + Hohmann transfer
+        Bottom-right corner
+  ───────────────────────────────────────────────────── */
+  const orb = {
+    cx: 0.82, cy: 0.38,  // centre (normalised)
+    r_planet: 9,
+    // low orbit
+    a1: 52, b1: 52,       // circular (a=b)
+    // high orbit (target)
+    a2: 95, b2: 78,       // elliptical
+    // transfer ellipse (Hohmann)
+    aT: 73.5, bT: 63,
+  };
+
+  function drawOrbit(cx, cy, a, b, rot, alpha, dash) {
+    ctx.save(); ctx.translate(cx, cy); ctx.rotate(rot);
+    if (dash) ctx.setLineDash(dash);
+    ctx.beginPath(); ctx.ellipse(0, 0, a, b, 0, 0, Math.PI*2);
+    ctx.strokeStyle = `${A}${alpha})`; ctx.lineWidth = 0.9; ctx.stroke();
+    ctx.setLineDash([]); ctx.restore();
+  }
+
+  function arrowHead(cx, cy, ax, ay, alpha) {
+    const ang = Math.atan2(ay-cy, ax-cx), hs=5;
+    ctx.beginPath(); ctx.moveTo(ax, ay);
+    ctx.lineTo(ax-hs*Math.cos(ang-0.45), ay-hs*Math.sin(ang-0.45));
+    ctx.lineTo(ax-hs*Math.cos(ang+0.45), ay-hs*Math.sin(ang+0.45));
+    ctx.closePath(); ctx.fillStyle=`${A}${alpha})`; ctx.fill();
+  }
+
+  function drawOrbital() {
+    const cx = orb.cx*W, cy = orb.cy*H;
+    const tilt = 0.18; // slight tilt of orbital plane
+
+    // ── central planet ──
+    ctx.beginPath(); ctx.arc(cx, cy, orb.r_planet, 0, Math.PI*2);
+    ctx.strokeStyle = `${A}0.42)`; ctx.lineWidth = 1.2; ctx.stroke();
+    // planet glow
+    const pgrd = ctx.createRadialGradient(cx,cy,0, cx,cy,orb.r_planet);
+    pgrd.addColorStop(0, `${A}0.14)`); pgrd.addColorStop(1, `${A}0)`);
+    ctx.beginPath(); ctx.arc(cx, cy, orb.r_planet, 0, Math.PI*2);
+    ctx.fillStyle = pgrd; ctx.fill();
+
+    // ── low circular orbit ──
+    drawOrbit(cx, cy, orb.a1, orb.b1, tilt, 0.22, null);
+
+    // ── high elliptical orbit ──
+    drawOrbit(cx, cy, orb.a2, orb.b2, tilt+0.1, 0.18, null);
+
+    // ── Hohmann transfer ellipse (dashed) ──
+    drawOrbit(cx, cy, orb.aT, orb.bT, tilt+0.05, 0.26, [3,4]);
+
+    // periapsis / apoapsis markers
+    ctx.font = "300 9px 'DM Sans',sans-serif";
+    const pa = tilt+0.05;
+    const peri = { x: cx + orb.aT*Math.cos(pa+Math.PI), y: cy + orb.bT*Math.sin(pa+Math.PI) };
+    const apo  = { x: cx + orb.aT*Math.cos(pa),          y: cy + orb.bT*Math.sin(pa) };
+
+    ctx.fillStyle = `${A}0.28)`;
+    ctx.fillText('peri', peri.x+4, peri.y-4);
+    ctx.fillText('apo',  apo.x+4,  apo.y-4);
+
+    // ── sat 1 — low circular orbit ──
+    const ω1  = t * 0.022 + tilt;
+    const s1x = cx + orb.a1*Math.cos(ω1), s1y = cy + orb.b1*Math.sin(ω1);
+    ctx.beginPath(); ctx.arc(s1x, s1y, 2.5, 0, Math.PI*2);
+    ctx.fillStyle = `${A}0.55)`; ctx.fill();
+
+    // velocity vector tangent to circle
+    const vt1x = -Math.sin(ω1)*18, vt1y = Math.cos(ω1)*13;
+    ctx.beginPath(); ctx.moveTo(s1x, s1y); ctx.lineTo(s1x+vt1x, s1y+vt1y);
+    ctx.strokeStyle=`${A}0.32)`; ctx.lineWidth=0.8; ctx.stroke();
+    arrowHead(s1x, s1y, s1x+vt1x, s1y+vt1y, 0.32);
+
+    // ── sat 2 — high elliptical orbit ──
+    const ω2  = t * 0.011 + tilt + 0.1 + Math.PI*0.6;
+    const s2x = cx + orb.a2*Math.cos(ω2), s2y = cy + orb.b2*Math.sin(ω2);
+    ctx.beginPath(); ctx.arc(s2x, s2y, 2.5, 0, Math.PI*2);
+    ctx.fillStyle = `${A}0.50)`; ctx.fill();
+
+    // ── transfer vehicle — on Hohmann ellipse ──
+    // half-orbit transfer: from periapsis → apoapsis
+    const transferPeriod = 600;
+    const tp   = (t % transferPeriod) / transferPeriod; // 0→1
+    const hAngle = pa + Math.PI + tp * Math.PI; // sweeps half-ellipse
+    const tvx = cx + orb.aT*Math.cos(hAngle), tvy = cy + orb.bT*Math.sin(hAngle);
+    ctx.beginPath(); ctx.arc(tvx, tvy, 3, 0, Math.PI*2);
+    ctx.fillStyle = `${A}0.60)`; ctx.fill();
+
+    // Δv burn markers at periapsis & apoapsis
+    if (tp < 0.04 || tp > 0.96) {
+      ctx.beginPath(); ctx.arc(peri.x, peri.y, 5, 0, Math.PI*2);
+      ctx.strokeStyle = `${A}0.50)`; ctx.lineWidth = 1.2; ctx.stroke();
+      ctx.fillStyle = `${A}0.35)`; ctx.fillText('Δv₁', peri.x+6, peri.y+10);
+    }
+    if (tp > 0.47 && tp < 0.55) {
+      ctx.beginPath(); ctx.arc(apo.x, apo.y, 5, 0, Math.PI*2);
+      ctx.strokeStyle = `${A}0.50)`; ctx.lineWidth = 1.2; ctx.stroke();
+      ctx.fillStyle = `${A}0.35)`; ctx.fillText('Δv₂', apo.x+6, apo.y+10);
+    }
+
+    // section label
+    ctx.font = "300 9px 'DM Sans',sans-serif";
+    ctx.fillStyle = `${A}0.22)`;
+    ctx.fillText('hohmann transfer · orbital mechanics', cx - 70, cy + orb.b2 + 16);
+  }
+
+  /* ─────────────────────────────────────────────────────
+     MAIN LOOP
+  ───────────────────────────────────────────────────── */
+  function frame() {
+    ctx.clearRect(0, 0, W, H);
+
+    lissajous.forEach(drawLissajous);
+    rulers.forEach(drawRuler);
+    dimLines.forEach(drawDimLine);
+    drawFloaters();
+    clusters.forEach(drawCluster);
+    drawLunar();
+    drawOrbital();
+
+    t++;
+    requestAnimationFrame(frame);
+  }
+
+  frame();
+})();
+</script>
+</body>
 </html>
